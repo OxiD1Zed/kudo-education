@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "75c275cf-1f5e-4630-8fbb-fd92f5b9b47e",
+		"name": "kode-education",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29498937"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"example\",\r\n    \"password\":\"qwerty123\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNote1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 323032342d30392d30332030383a32393a33392e38303332343134202b30333030204d534b206d3d2b3334392e3339373137393430316578616d706c653264616161643665353630346538653137626439663130386439316532366166653632383164616338666461303039313034306137613664376264396234336235",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Моя новаая заметка\",\r\n    \"body\":\"Како тексст\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/note",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"note"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllNotes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 323032342d30392d30332030383a32333a35382e34303637373037202b30333030204d534b206d3d2b382e3030303730383730316578616d706c6564616161643665353630346538653137626439663130386439316532366166653632383164616338666461303039313034306137613664376264396234336235",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/note",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"note"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNote2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 323032342d30392d30332030383a32393a33392e38303332343134202b30333030204d534b206d3d2b3334392e3339373137393430316578616d706c653264616161643665353630346538653137626439663130386439316532366166653632383164616338666461303039313034306137613664376264396234336235",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Моя новая заметке 2\",\r\n    \"body\":\"КаК мыыщь\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/note",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"note"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"example2\",\r\n    \"password\":\"qwerty123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
